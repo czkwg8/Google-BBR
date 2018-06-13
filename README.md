@@ -1,6 +1,8 @@
 # Google-BBR
 BBR congestion control algorithm
 
+This repository will build the kernel module.
+
 # How to Use
 Make sure you have the same version kernel headers as your kernel installed 
 
