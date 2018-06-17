@@ -1,7 +1,7 @@
 # Google-BBR
 BBR congestion control algorithm
 
-This repository will build the kernel module.
+This repository will build the kernel modules (BBR and Fair Queue traffic policing).
 
 # How to Use
 Make sure you have the same version kernel headers as your kernel installed 
@@ -14,7 +14,8 @@ then
 
 If you found a warning was treated as an error,you may need to install gcc-4.9.
 
-After the installion,enable the module
+After the installion,enable the modules
+
     echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
     echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
     sysctl -p
